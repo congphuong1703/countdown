@@ -88,12 +88,12 @@ class App extends Component {
             <div className="App">
                 <div className="inputGroup" style={{visibility: (this.state.show ? 'hidden' : 'visible')}}>
                     <h3>Hour</h3>
-                    <TextField ref={this.hoursInput} variant="outlined" color="primary"
+                    <TextField ref={this.hoursInput} value={this.state.hours} variant="outlined" color="primary"
                                type="number" id="hours"
                                name="hours"
                                onChange={this.inputHandler}/>
                     <h3>Minute</h3>
-                    <TextField ref={this.minutesInput} variant="outlined" color="primary"
+                    <TextField ref={this.minutesInput} value={this.state.minutes} variant="outlined" color="primary"
                                id="minutes" type="number"
                                name="minutes"
                                onChange={this.inputHandler}/>
